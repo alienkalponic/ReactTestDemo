@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import BestPart from './CardNumber';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+<>
+  <section class="best-part" id="priceingdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold text-white">OUR BEST PRICING</h1>
+    </div>
+    <div class="container">
+    <div class="row">
+        <BestPart/>
+    </div>
+    <div class="row">
+        <BestPart/>
+    </div>
+    </div>
+  </section>
+</>,
+document.getElementById('root')
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+);
